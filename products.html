@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalog — DeepSkill AI</title>
+  <meta name="description" content="What’s for sale. Prompt Secrets — 75 copy-paste prompts. $4." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect x='1' y='1' width='20' height='20' fill='none' stroke='%23f2ece1' stroke-width='1.4'/%3E%3Crect x='5.5' y='5.5' width='11' height='11' fill='none' stroke='%23c45a38' stroke-width='1.4'/%3E%3Crect x='9.2' y='9.2' width='3.6' height='3.6' fill='%23f2ece1'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">DeepSkill AI</a>
+    <nav class="nav-links">
+      <a href="method.html">Method</a>
+      <a class="is-on" href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+    <a class="btn btn-fill" href="start.html">Start here</a>
+  </header>
+
+  <section class="page-hero" style="min-height:0;padding:140px 48px 36px">
+    <div class="rule"></div>
+    <h1>The catalog.</h1>
+    <p>One item. When there’s a second, it appears here. Nothing “coming soon.”</p>
+  </section>
+
+  <div class="catalog">
+    <div class="chips" role="tablist">
+      <button class="chip is-on" type="button" data-filter="all">All</button>
+      <button class="chip" type="button" data-filter="prompts">Prompts</button>
+    </div>
+
+    <div class="grid">
+      <article class="pcard" data-kind="prompts" data-href="prompt-secrets.html">
+        <div class="pcard-art">
+          <img src="img/prompt-secrets-1.jpg" alt="Prompt Secrets" />
+        </div>
+        <div class="pcard-body">
+          <div>
+            <div class="badge">PDF · 56 pages</div>
+            <h2>Prompt Secrets</h2>
+            <p>75 copy-paste prompts for ChatGPT, Claude &amp; Gemini. Writing, marketing, research, strategy, sales, code, and the rest of the week.</p>
+            <p class="meta">Instant download · Gumroad · USD</p>
+          </div>
+          <div class="row">
+            <span class="amt">$4</span>
+            <a class="btn btn-fill" href="https://deepskill.gumroad.com/l/xugipk?wanted=true">Get on Gumroad</a>
+            <a class="btn btn-line" href="prompt-secrets.html">Details</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <footer>
+    <span><a href="index.html">DeepSkill AI</a></span>
+    <span>Prices in USD</span>
+  </footer>
+  <script>
+    document.querySelectorAll(".pcard").forEach(function (card) {
+      card.addEventListener("click", function (e) {
+        if (e.target.closest("a")) return;
+        var href = card.getAttribute("data-href");
+        if (href) window.location.href = href;
+      });
+    });
+    document.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        document.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-on"); });
+        chip.classList.add("is-on");
+        var f = chip.getAttribute("data-filter");
+        document.querySelectorAll(".pcard").forEach(function (card) {
+          var show = f === "all" || card.getAttribute("data-kind") === f;
+          card.style.display = show ? "" : "none";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
