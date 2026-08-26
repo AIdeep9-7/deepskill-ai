@@ -128,7 +128,11 @@ h1 span { display: block; }
   width: 100%; height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-16deg) rotateY(24deg);
+  animation: spin 12s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotateX(-16deg) rotateY(0deg); }
+  to { transform: rotateX(-16deg) rotateY(360deg); }
 }
 .sculp b {
   display: block;
@@ -480,14 +484,9 @@ footer a:hover { color: var(--ink); }
     50% { transform: translate(-36px, 16px) scale(1.06); opacity: 1; }
   }
   .hero-art .rig { animation: idle 12s ease-in-out infinite; }
-  .sculp { animation: spin 32s linear infinite; }
   @keyframes idle {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
-  }
-  @keyframes spin {
-    from { transform: rotateX(-16deg) rotateY(24deg); }
-    to { transform: rotateX(-16deg) rotateY(384deg); }
   }
   .loop article:nth-child(1) { animation: pulse-step 12s 0s infinite; }
   .loop article:nth-child(2) { animation: pulse-step 12s 3s infinite; }
