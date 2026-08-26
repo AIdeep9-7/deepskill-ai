@@ -13,14 +13,17 @@
   var hero = document.querySelector(".hero");
   var rig = document.getElementById("loop-rig");
   if (hero && rig) {
-    hero.addEventListener("mousemove", function (e) {
-      rig.style.animation = "none";
-      tilt(rig, e, 8);
-    });
-    hero.addEventListener("mouseleave", function () {
-      rig.style.transform = "";
-      rig.style.animation = "";
-    });
+        var sculp = rig.querySelector(".sculp");
+        hero.addEventListener("mousemove", function (e) {
+          rig.style.animation = "none";
+          if (sculp) sculp.style.animationPlayState = "paused";
+          tilt(rig, e, 12);
+        });
+        hero.addEventListener("mouseleave", function () {
+          rig.style.transform = "";
+          rig.style.animation = "";
+          if (sculp) sculp.style.animationPlayState = "";
+        });
   }
 
   var book = document.querySelector(".buy-art img");
