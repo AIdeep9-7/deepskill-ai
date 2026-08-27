@@ -26,94 +26,139 @@
     <div class="hero-copy">
       <div class="rule"></div>
       <h1><span>A method</span> <span>you can name.</span></h1>
-      <p class="hero-lede">See. Structure. Stress. Ship. If a lesson doesn’t map onto one of these, it isn’t ours.</p>
+      <p class="hero-lede">See. Structure. Stress. Ship. The Monday below is the lesson. The labels are so you can remember it under pressure.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="loop-mark" viewBox="0 0 200 200" fill="none">
+        <rect x="14" y="14" width="172" height="172" stroke="#c4a06a" stroke-width="3" transform="rotate(14 100 100)"/>
+        <rect x="38" y="38" width="124" height="124" stroke="#c45a38" stroke-width="2.4" transform="rotate(-10 100 100)"/>
+        <rect x="62" y="62" width="76" height="76" stroke="#e8d7b0" stroke-width="2.2" transform="rotate(20 100 100)"/>
+        <rect x="86" y="86" width="28" height="28" fill="#f2ece1" transform="rotate(6 100 100)"/>
+      </svg>
     </div>
   </section>
 
-  <section class="step-row">
-    <div class="big">01</div>
-    <h2>See —<br/>frame the work.</h2>
-    <p>What decision is actually being made? What does “good” look like before a model is involved? If you skip this, you are decorating a guess.</p>
-  </section>
-  <section class="step-row">
-    <div class="big">02</div>
-    <h2>Structure —<br/>give it a job.</h2>
-    <p>Role, constraints, context, how you will evaluate. The prompt is the last sentence, not the first. Prompts are downstream.</p>
-  </section>
-  <section class="step-row">
-    <div class="big">03</div>
-    <h2>Stress —<br/>interrogate it.</h2>
-    <p>Adversarial checks. Taste. Domain truth. Fluency is free now. Rejection is the skill. Amateurs stop here. Operators start.</p>
-  </section>
-  <section class="step-row">
-    <div class="big">04</div>
-    <h2>Ship —<br/>make it paid.</h2>
-    <p>An offer, a brief, a decision, a deliverable. If it never leaves the chat window, it doesn’t count. The week is not a folder of drafts.</p>
+  <section class="loop">
+    <article>
+      <div class="n">01 — See</div>
+      <div>
+        <h2>Frame</h2>
+        <p>The decision, and what “good” looks like, before a model is involved.</p>
+      </div>
+    </article>
+    <article>
+      <div class="n">02 — Structure</div>
+      <div>
+        <h2>Assign</h2>
+        <p>Role, constraints, and the list you will use to reject the answer. Then the prompt.</p>
+      </div>
+    </article>
+    <article>
+      <div class="n">03 — Stress</div>
+      <div>
+        <h2>Refuse</h2>
+        <p>Quote the draft. Kill what almost shipped. Fluency is not the test.</p>
+      </div>
+    </article>
+    <article>
+      <div class="n">04 — Ship</div>
+      <div>
+        <h2>Leave</h2>
+        <p>The artifact a client can put live. If it never leaves the chat, it doesn’t count.</p>
+      </div>
+    </article>
   </section>
 
   <section class="monday" id="monday">
     <div class="monday-k">A Monday · reconstruction</div>
-    <h2>A landing page for a client.</h2>
-    <p class="monday-note">Not a named client. A faithful reconstruction of the job: a page that has to get a yes this week. Steal it. Then replace the facts with yours.</p>
+    <h2>A landing that has to take money this week.</h2>
+    <p class="monday-note">Not a named client. A reconstruction of a job I have run in this shape: a page for a two-week homepage sprint, sold to bootstrapped SaaS founders. The yes is $900, start next Monday. Steal the list. Replace the facts.</p>
 
     <article>
       <div class="n">See</div>
       <h3>The decision, before the model.</h3>
-      <p>The client sells a six-week positioning sprint to founders who already have a product and a homepage that does not convert. They do not need “a modern site.” They need this week’s yes: <em>Book the $400 diagnostic.</em></p>
-      <p>Good looks like: one reader (the founder), one offer (the diagnostic), one action (a calendar link), a headline that can be false. If the headline cannot be argued with, it is decoration.</p>
+      <p>The designer does not need “a modern site.” They have a product, some traffic, and a homepage that lists features. Buyers still write “so what do you actually do?” The page exists to sell one thing: a two-week homepage sprint. Copy and layout. One round. Live on Friday of week two.</p>
+      <div class="duo">
+        <div class="yes">
+          <div class="n">For</div>
+          <p>Founder, under ten people, already shipping, already has visitors.</p>
+        </div>
+        <div class="no">
+          <div class="n">Not for</div>
+          <p>Agencies. Full product redesigns. “Make it pop.”</p>
+        </div>
+      </div>
+      <p>Good, in five seconds, from a stranger: who it is for, what they buy, the price, what happens next. If the headline cannot be argued with, it is decoration.</p>
     </article>
+
     <article>
       <div class="n">Structure</div>
-      <h3>Give the model a job. Then the prompt.</h3>
-      <p>Role: direct-response, not brand poet. Length: hero, problem, offer, what happens, close. Kill-conditions: no “we help companies,” no second offer, no “book a free call,” no stock metrics, no carousel of everything they also do.</p>
-      <p>The prompt is the last sentence. Evaluation is written first: if a stranger cannot say who it is for and what they do next, it dies.</p>
+      <h3>Write the list first. Then the prompt.</h3>
+      <p>Role: direct-response for a single paid offer. Not a portfolio. Not a brand film. Length: hero, who it’s for / not for, what they get, close.</p>
+      <div class="list-card">
+        <div class="n">Evaluation — before generate</div>
+        <ol>
+          <li>A stranger can say who, what, and $900 without scrolling.</li>
+          <li>Headline is falsifiable. A founder could disagree.</li>
+          <li>One action: pay and start Monday. No “book a call.”</li>
+          <li>No metric or “50+ clients” the designer did not put in the brief.</li>
+          <li>If a competitor pastes their name in and the page still works, it dies.</li>
+        </ol>
+      </div>
+      <p>Only then the prompt: draft the hero and the for/not-for against that list. Do not invent proof. Do not offer a free call.</p>
     </article>
+
     <article>
       <div class="n">Stress</div>
-      <h3>The first pass. What dies.</h3>
-      <blockquote class="kill">
-        Unlock your brand’s true potential. We partner with ambitious companies to deliver world-class positioning, strategy, and growth. Book a free call — or explore our services.
-      </blockquote>
-      <ul>
-        <li>No who. “Ambitious companies” is everyone.</li>
-        <li>Two actions. Free call and a menu. That is a brochure.</li>
-        <li>Adjective pile. Potential, world-class, ambitious. None can be false.</li>
-        <li>No price. No next step a founder can do today.</li>
+      <h3>The first useful draft. This is the trap.</h3>
+      <p>The model does not give you “Unlock your potential.” It gives you something a tired client will almost accept:</p>
+      <figure class="figure-bleed">
+        <img src="img/monday-print.jpg" alt="A printed draft on a desk, a line struck through" />
+        <figcaption>The draft that almost shipped</figcaption>
+      </figure>
+      <div class="paper">
+        <span class="stamp">Reject</span>
+        <p>I help SaaS founders turn confusing homepages into clear ones. In two weeks you’ll have a new homepage that converts. Book a call to see if we’re a fit. 50+ founders have used this process.</p>
+      </div>
+      <ul class="kill-list">
+        <li><em>“I help SaaS founders…”</em> — a job description. Not a decision.</li>
+        <li><em>“that converts”</em> — converts to what.</li>
+        <li><em>“Book a call”</em> — the yes was $900, not a calendar.</li>
+        <li><em>“50+ founders”</em> — not in the brief. The model minted proof.</li>
+      </ul>
+      <div class="paper">
+        <span class="stamp">Still dead</span>
+        <p>Your homepage lists features. Buyers still email “so what do you do?” A two-week homepage sprint for bootstrapped SaaS. $900. Apply here.</p>
+      </div>
+      <ul class="kill-list">
+        <li>“Apply here” is not an action.</li>
+        <li>No not-for. Agencies will waste the week.</li>
+        <li>Polite. Polite does not sell a sprint.</li>
       </ul>
     </article>
+
     <article>
       <div class="n">Ship</div>
-      <h3>What could go to the client.</h3>
+      <h3>What can go to the client.</h3>
       <div class="ship">
-        <p class="ship-k">Hero</p>
-        <p class="ship-h">Your homepage explains the product. It does not get the meeting.</p>
-        <p>A $400 diagnostic. Forty-five minutes. You leave with the one sentence the page should have said.</p>
-        <p class="ship-cta">Book the diagnostic →</p>
+        <p class="ship-k">Live Friday · week two</p>
+        <p class="ship-h">Your homepage is a feature list. The buyer still doesn’t know if this is for them.</p>
+        <p>A two-week homepage sprint for SaaS under ten people who already have traffic. Copy and layout. One round.</p>
+        <p>$900. You start next Monday.</p>
+        <p class="ship-k" style="margin-top:22px">Not for</p>
+        <p>Agencies. Full product redesigns. “Make it pop.”</p>
+        <span class="ship-cta">Pay $900 — start Monday →</span>
       </div>
-      <p>The chat was a tool. This is the work. If it never leaves the window, it does not count.</p>
+      <p>A founder can argue with the headline. The price is on the page. The chat was a tool. This is the work.</p>
     </article>
   </section>
-
-  <section class="filter">
-    <article>
-      <div class="k">A Monday, without the Loop</div>
-      <h2>You open the chat.</h2>
-      <p>You type “write a landing page.” You get fluent filler. You rewrite it six times. The afternoon is gone. The client still has a brochure.</p>
-    </article>
-    <article>
-      <div class="k">A Monday, with it</div>
-      <h2>You name the yes.</h2>
-      <p>See: the diagnostic is the job. Structure: one reader, kill-conditions. Stress: you reject the generic middle. Ship: a hero the client can put live. The chat was a tool, not the work.</p>
-    </article>
-  </section>
-
-  <p class="quote-band">Unnamed methods evaporate. You remember a loop.</p>
 
   <section class="close">
-    <h2>Then the kit, if you want speed.</h2>
+    <h2>The list is the skill.</h2>
+    <p class="hint" style="margin-bottom:22px">The longer argument is the essay. The kit is only speed to a draft.</p>
     <div class="actions" style="justify-content:center">
-      <a class="btn btn-fill" href="prompt-secrets.html">Prompt Secrets · $4</a>
-      <a class="btn btn-line" href="journal/the-loop.html">Read the essay</a>
+      <a class="btn btn-fill" href="journal/evaluation.html">Read the essay</a>
+      <a class="btn btn-line" href="prompt-secrets.html">Prompt Secrets · $4</a>
     </div>
   </section>
 
