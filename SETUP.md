@@ -59,6 +59,26 @@ Stop the server with `Ctrl+C` when you’re done.
 
 This is the durable way. Cloudflare will pull from GitHub. Every push updates the live URL.
 
+### 2.0 GitHub in the browser (no Desktop, no install)
+
+You already have the zip. Use the GitHub **website**.
+
+1. Unzip `deepskill-website.zip`. Confirm you see `index.html` plus `css` and `img`.
+2. [github.com/new](https://github.com/new)
+3. Repository name: `deepskill-ai`
+4. Public. **Do not** tick README / .gitignore / license.
+5. **Create repository**
+6. On the empty repo page: **uploading an existing file** (or **Add file** → **Upload files**).
+7. Drag **all** unzipped files and folders into the big box (`index.html`, `css`, `img`, `journal`, every `.html`).  
+   You must see `index.html` in the file list, not only a folder named `deepskill`.
+8. Commit message: `Add site`
+9. **Commit changes**
+10. Open `https://github.com/YOURUSER/deepskill-ai` and check `index.html` is at the **root** (first screen, not inside another folder).
+
+Then go to section 3 (Cloudflare → Connect to Git → this repo).
+
+---
+
 ### 2.1 Create an empty repo on GitHub
 
 1. Log in at [https://github.com](https://github.com)
