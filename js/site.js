@@ -1,4 +1,14 @@
 (function () {
+  var toggle = document.querySelector(".nav-toggle");
+  var links = document.querySelector(".nav-links");
+  if (toggle && links) {
+    toggle.addEventListener("click", function () {
+      var on = links.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", on ? "true" : "false");
+      toggle.textContent = on ? "Close" : "Menu";
+    });
+  }
+
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   if (window.matchMedia("(pointer: coarse)").matches) return;
 
@@ -8,19 +18,6 @@
     var y = (ev.clientY - r.top) / r.height - 0.5;
     el.style.transform =
       "rotateY(" + (x * max).toFixed(2) + "deg) rotateX(" + (-y * max).toFixed(2) + "deg)";
-  }
-
-  var hero = document.querySelector(".hero");
-  var rig = document.getElementById("loop-rig");
-  if (hero && rig) {
-    hero.addEventListener("mousemove", function (e) {
-      rig.style.animation = "none";
-      tilt(rig, e, 8);
-    });
-    hero.addEventListener("mouseleave", function () {
-      rig.style.transform = "";
-      rig.style.animation = "";
-    });
   }
 
   var book = document.querySelector(".buy-art img");

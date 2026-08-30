@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DeepSkill Pro — DeepSkill AI</title>
+  <meta name="robots" content="noindex" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect x='1' y='1' width='20' height='20' fill='none' stroke='%23f2ece1' stroke-width='1.4'/%3E%3Crect x='5.5' y='5.5' width='11' height='11' fill='none' stroke='%23c45a38' stroke-width='1.4'/%3E%3Crect x='9.2' y='9.2' width='3.6' height='3.6' fill='%23f2ece1'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +14,8 @@
 <body>
   <header class="nav">
     <a class="brand" href="index.html">DeepSkill AI</a>
-            <nav class="nav-links">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav-links" id="site-nav">
       <a href="method.html">Method</a>
       <a href="about.html">About</a>
       <a href="journal.html">Essays</a>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /pro.html
+Disallow: /thanks.html
+Disallow: /operator-os.html
+
+Sitemap: https://deepskill.pages.dev/sitemap.xml
